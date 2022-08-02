@@ -18,12 +18,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Suo App',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        debugShowCheckedModeBanner: false,
-        // home: const OnBoardScreen(),
-        home: const GetEnvelopesScreen());
+      title: 'Suo App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: const OnBoardScreen(),
+      // home: const GetEnvelopesScreen(),
+    );
   }
 }
