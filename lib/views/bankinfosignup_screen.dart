@@ -37,7 +37,7 @@ class BankInfoScreen extends StatelessWidget {
                 height: Get.height * 0.022,
               ),
               Container(
-                height: Get.height * 0.75,
+                height: Get.height * 0.55,
                 width: Get.width * 0.999,
                 decoration: BoxDecoration(
                     color: AppColors.white,
@@ -94,7 +94,7 @@ class BankInfoScreen extends StatelessWidget {
                       AppTextField(
                         controller:
                             addBankController.accountHolderNameController,
-                        title: Text(
+                        title: const Text(
                           AppStrings.accountname,
                           style: TextStyle(
                               fontSize: 16,
@@ -112,7 +112,7 @@ class BankInfoScreen extends StatelessWidget {
                       SizedBox(height: Get.height * 0.035),
                       AppTextField(
                         controller: addBankController.accountNumberController,
-                        title: Text(
+                        title: const Text(
                           AppStrings.accountnumber,
                           style: TextStyle(
                               fontSize: 16,

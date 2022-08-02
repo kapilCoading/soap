@@ -13,6 +13,7 @@ import 'package:souapp/utils/appstrings.dart';
 class GetPlanController extends GetxController {
   String randomCycle = "Random cycle";
   String fixedCycle = "Fixed cycle";
+  //  static String getEnvelop = "";
 
   RefreshController refreshController =
       RefreshController(initialRefresh: false);
@@ -25,6 +26,30 @@ class GetPlanController extends GetxController {
   String get getSelectedDate => this._selectedDate.value;
   set setSelectedDate(DateTime datas) {
     this._selectedDate.value = datas.toIso8601String();
+  }
+
+  RxString envelop = "".obs;
+  String get getEnvelop => this.envelop.value;
+  set setEnvelop(String datas) {
+    this.envelop.value = datas;
+  }
+
+  RxString frequency = "".obs;
+  String get getFrequency => this.frequency.value;
+  set setFrequency(String datas) {
+    this.frequency.value = datas;
+  }
+
+  RxString startingamount = "".obs;
+  String get getStartingamount => this.startingamount.value;
+  set setStartingamount(String datas) {
+    this.startingamount.value = datas;
+  }
+
+  RxString topUp = "".obs;
+  String get getTopUp => this.topUp.value;
+  set setTopUp(String datas) {
+    this.topUp.value = datas;
   }
 
   RxString _cycleType = "Random cycle".obs;

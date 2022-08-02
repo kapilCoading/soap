@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:souapp/views/getenvelopes_screen.dart';
 
 import 'views/onboard/onboard_screen.dart';
 
@@ -17,12 +18,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Suo App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const OnBoardScreen(),
-    );
+        title: 'Suo App',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        debugShowCheckedModeBanner: false,
+        // home: const OnBoardScreen(),
+        home: const GetEnvelopesScreen());
   }
 }
